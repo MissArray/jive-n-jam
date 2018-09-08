@@ -211,6 +211,7 @@ footer {
 	
 	h3 {
 		margin: auto;
+		min-width: 90%;
 		max-width: 95%;
 		font-size: 2rem;
 		text-align: left;
