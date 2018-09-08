@@ -1,0 +1,361 @@
+/*See this tutorial: https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228
+and this video tutorial:
+https://www.youtube.com/watch?v=-hmOZU7Zk10
+*/
+
+html {
+	background-image: url('Swing_dancers_Athens_2011d-CR_cr.jpg');
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-color: cadetblue;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	margin-bottom: 3vh;
+	padding: 0.5rem;
+	background-color: #4e44479a;
+	}
+
+	#logo {
+		padding: 7rem;
+		background-image: url('Jive-n-Jam_logo_SM.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+		}
+
+h3 {
+	margin: 0 auto;
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: 'Molengo', sans-serif;
+	}
+
+h4 {
+	font-size: 1.5rem;
+	text-align: left;
+	font-family: 'Molengo', sans-serif;
+	color:  #faf2f4;
+}
+
+.dance-style {
+	color: #fbc877;
+}
+
+.notes {
+	color: #f5318c;
+}
+
+main {
+	display: flex;
+	padding: 0;
+	margin: 5vh 0;
+	font-family: 'Molengo', sans-serif;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 3vh auto;
+	padding: 1rem;
+	}
+
+li {
+	list-style-type: none;
+	height: auto;
+	width: 90%;
+	border-radius: 3px;
+	padding-top: 0;
+	padding-left: 0.8rem;
+	padding-right: 0.35rem;
+	padding-bottom: 0.35rem;
+	margin: 2% auto;
+	font-family: 'Molengo', sans-serif;
+	font-size: 1.3rem;
+	color: whitesmoke;
+}
+
+#liA {
+	background-color: #e56d93;
+	}
+
+#liA:hover {
+	background-color: #f0b33c;
+}
+
+#liB {
+	background-color: #e58d6d;
+}
+
+#liB:hover {
+	background-color: #f0b33c;
+}
+
+#liC {
+	background-color: #d47e84;
+}
+
+#liC:hover {
+	background-color: #f0b33c;
+}
+
+#liD {
+	background-color:#e5a16d;
+}
+
+#liD:hover {
+	background-color: #f0b33c;
+}
+
+#liE {
+	background-color: #ce5d81;
+}
+
+#liE:hover {
+	background-color: #f0b33c;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+#li-button {
+	text-decoration: none;
+	width: 90%;
+	font-family: 'Molengo', sans-serif;
+	color: whitesmoke;
+	font-size: 1.2rem;
+	background-color: #d69721;
+	border-style: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	border-radius: 3px;	
+	margin: 1rem auto;
+	text-align: center;
+	}
+
+#li-button:hover {
+	text-decoration: none;
+	background-color: #23ad84;
+	color: #ffe1fa;
+	cursor: pointer;
+	border-style: solid;
+	border-color: #29c294;
+	border-width: 1px;
+	border-radius: 9px;
+}
+
+#li-button:active {
+	text-decoration: none;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #e56d93;
+	background-color: #25cfcf;
+	color: rgb(83, 136, 138);
+	border-radius: 15px;
+	transform: translateY(2px);
+}
+
+footer {
+	font-size: 0.9rem;
+	text-align: center;
+	font-family: 'Molengo', sans-serif;
+	color:  #faf2f4;
+	margin-bottom: 2vh;
+	margin-left: 2%;
+	margin-right: 1%;
+	padding: 0.7 rem;
+}
+
+
+/*-------MEDIA QUERIES--------*/
+
+@media only screen and (min-width: 700px) {
+	html {
+		background-image: url('Swing_dancers_Athens_2011d-CR_cr.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: cadetblue;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	
+	header {
+		display: flex;
+		margin-top: 1vh;
+		margin-bottom: 3vh;
+		padding: 0.7rem;
+		background: linear-gradient(#533f43a1, #533f439a, #645d5e9f, #6e60627e, #8f737834);
+		/* background-color: #756469f5; */
+		}
+	
+	#logo {
+		position: absolute;
+		right: 3vh;
+		padding: 16rem;
+		background-image: url('Jive-n-Jam_logo.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		}
+	
+	h3 {
+		margin: auto;
+		font-size: 2rem;
+		text-align: left;
+		font-family: 'Molengo', sans-serif;
+		color: #e6a030;
+		}
+	
+	h4 {
+		font-size: 1.5rem;
+		text-align: left;
+		font-family: 'Molengo', sans-serif;
+		color:  #faf2f4;
+	}
+	
+	.notes {
+		color: #e56d93;
+	}
+	
+	main {
+		padding: 0;
+		margin: 0;
+		font-family: 'Molengo', sans-serif;
+	}
+	
+	ul {
+		display: grid;
+		grid-template-columns: repeat(6, minmax(min-content, 1fr));
+		grid-template-rows: repeat(7, auto);
+		grid-gap: 1vh;
+		list-style-type: none;
+		font-size: 1.2rem;
+		color: whitesmoke;
+		margin-left: 1vh;
+		padding: 0;
+	}
+	
+	li {
+		border-radius: 3px;
+		padding-top: 0;
+		padding-left: 0.9rem;
+		padding-right: 0.6rem;
+	}
+	
+	#liA {
+		grid-column: 1 / 2;
+		grid-row: 2 / span 1;
+		background-color: #e56d93;
+		}
+	
+	#liA:hover {
+		background-color: #f0b33c;
+	}
+	
+	#liB {
+		grid-column: 2 / 3;
+		grid-row: 3 / span 1;
+		background-color: #e58d6d;
+	}
+	
+	#liB:hover {
+		background-color: #f0b33c;
+	}
+	
+	#liC {
+		grid-column: 1 / 2;
+		grid-row: 4 / span 1;
+		background-color: #d47e84;
+	}
+	
+	#liC:hover {
+		background-color: #f0b33c;
+	}
+	
+	#liD {
+		grid-column: 2 / span 1;
+		grid-row: 5;
+		background-color:#e5a16d;
+	}
+	
+	#liD:hover {
+		background-color: #f0b33c;
+	}
+	
+	#liE {
+		grid-column: 1 / 2;
+		grid-row: 6 / 7;
+		background-color: #ce5d81;
+	}
+	
+	#liE:hover {
+		background-color: #f0b33c;
+	}
+	
+	.bold-text {
+		font-weight: bold;
+		letter-spacing: 0.1rem;
+	}
+	
+	#li-button {
+		text-decoration: none;
+		grid-column: 2 / 3;
+		grid-row: 7 / 7;
+		font-family: 'Molengo', sans-serif;
+		color: rgb(248, 238, 238);
+		font-size: 1.3rem;
+		background-color: #f39741;
+		border-style: none;
+		cursor: pointer;
+		padding: 0.7rem;
+	}
+	
+	#li-button:hover {
+		text-decoration: none;
+		background-color: #26b479;
+		border-radius: 9px;
+	}
+	
+	#li-button:active {
+		text-decoration: none;
+		border-style: ridge;
+		border-width: 2px;
+		border-color: #ee5586;
+		color: #dafdf4;
+		border-radius: 18px;
+		transform: translateY(2px);
+	}
+
+	.dance-style {
+		color: rgb(241, 180, 100);
+	}
+
+	#dancers {
+		background-image: url(dancers2.png);
+		background-repeat: repeat;
+		margin-top: 10vh;
+		padding: 25px; 
+	}
+
+	footer {
+		font-size: 0.9rem;
+		text-align: center;
+		font-family: 'Molengo', sans-serif;
+		color:  #eedee2;
+		margin-top: 4vh;
+		margin-bottom: 3vh;
+		padding: 0.7 rem;
+	}
+}
