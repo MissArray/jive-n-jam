@@ -1,11 +1,11 @@
 ## Description
-Single-page demo website
+Responsive, 'mobile-first' single-page demo website
 
 ## Purpose
 Try out grid & flexbox
 
 ## Additional notes
-Graphics and background photo: Artemis Gause (@MissArray)
+Concept, graphics and background photo: Artemis Gause (@MissArray)
 
 ## Licence
 Code: MIT open source
