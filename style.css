@@ -198,7 +198,6 @@ footer {
 		margin-bottom: 3vh;
 		padding: 0.7rem;
 		background: linear-gradient(#533f43a1, #533f439a, #645d5e9f, #6e60627e, #8f737834);
-		/* background-color: #756469f5; */
 		}
 	
 	#logo {
@@ -212,6 +211,8 @@ footer {
 	
 	h3 {
 		margin: auto;
+		min-width: 90%;
+		max-width: 95%;
 		font-size: 2rem;
 		text-align: left;
 		font-family: 'Molengo', sans-serif;
